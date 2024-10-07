@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom - Discover Your Dream Destination</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        #searchSection {
+            margin: 20px;
+        }
+        .section {
+            display: none;
+        }
+        .section img {
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+        }
+        #result {
+            margin-top: 20px;
+        }
+        .suggestion-item {
+            cursor: pointer;
+            padding: 5px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">TravelBloom</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+	
+    <h1>Welcome to TravelBloom</h1>
+	
+    <!-- Combined Search Section -->
+    <section class="search-section" id="searchSection">
+        <input type="text" id="search-bar" placeholder="Search for a destination..." onkeyup="showSuggestions(this.value)">
+        <div id="suggestions"></div>
+        <button onclick="search()">Search</button>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <div class="background-image"></div>
+        <div class="content-overlay">
+            <h1>Explore the World with TravelBloom</h1>
+            <p>Uncover breathtaking destinations, immerse yourself in vibrant cultures, and experience unforgettable journeys. Let TravelBloom guide you to your dream vacation, where adventure and discovery await at every corner.</p>
+            <button class="book-now" onclick="bookNow()">Book Now</button>
+        </div>
+    </section>
+
+    <div id="result"></div>
+
+    <div id="templeSection" class="section">
+        <h2>Temples</h2>
+        <img src="temple1.jpeg" alt="Temple 1">
+        <img src="temple2.jpeg" alt="Temple 2">
+    </div>
+
+    <div id="beachSection" class="section">
+        <h2>Beaches</h2>
+        <img src="beach1.jpeg" alt="Beach 1">
+        <img src="beach2.jpeg" alt="Beach 2">
+    </div>
+
+    <div id="countrySection" class="section">
+        <h2>Countries</h2>
+        <img src="country1.jpeg" alt="Country 1">
+        <img src="country2.jpeg" alt="Country 2">
+    </div>
+
+    <!-- Social Media Links -->
+    <footer>
+        <ul class="social-media-links">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
